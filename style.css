@@ -129,16 +129,21 @@ section h2{
     box-sizing: border-box;
 }
 
+.semuacard{
+    text-align: center;
+}
+
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 350px;
-    margin: auto;
-    text-align: center;
+    margin: auto 10px;
+    /* text-align: center; */
     font-family: 'Comfortaa', cursive;
-    align-items: center;
+    /* align-items: center; */
     background-color: white;
-    float: left;
-    margin-right: 25px;
+    /* float: left; */
+    display: inline-block;
+    /* margin-right: 25px; */
     /* margin-left: 20px; */
 }
 
