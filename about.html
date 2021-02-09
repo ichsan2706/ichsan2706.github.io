@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleAbout.css">
+<a href="index.html" class="button">Home</a>
+</head>
+<body>
+<video autoplay loop id="myVideo">
+  <source src="video/iPhone 11 Pro Cinematic 4K_ Tokyo (1).mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>About Us</h1>
+  <p>Dengan DoFunID kamu diajak untuk berlibur kebanyak tempat indah yang mungkin belom kamu kunjungi!</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button id="back" onclick="location.href='index.html'" type="button">Back to Home</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

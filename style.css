@@ -1,0 +1,171 @@
+header{
+    background-color: white;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* align-items: center; */
+}
+
+header *{
+    display: inline;
+}
+
+header h1{
+    color: darkgreen;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-left: 50px;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: white;
+    float: right;
+    margin-right: 50px;
+}
+
+#balance{
+    float: right;
+    margin-left: 800px;
+    /* font-size: 20px; */
+    color: black;
+    text-align: center;
+}
+
+
+#balance h3{
+    /* margin-right: 0px; */
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin-top: 0px; */
+}
+
+#balancenumber{
+    float: right;
+    /* margin-left: 800px; */
+    /* font-size: 20px; */
+    color: black;
+    text-align: center;
+}
+
+#balancenumber h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+    /* margin-right: 100px; */
+    padding-left: 50px;
+}
+
+.dropdown .dropbtn{
+    font-size: 30px;
+    border: black;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: ghostwhite;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: ghostwhite;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    float: none;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+body{
+    background-image: url(img/pexels-veeterzy-39811.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+}
+
+section{
+    /* margin-bottom: 100px; */
+    margin-top: 100px;
+}
+
+section h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card *{
+    box-sizing: border-box;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    background-color: white;
+    float: left;
+    margin-right: 25px;
+    /* margin-left: 20px; */
+}
+
+.card img{
+    width: 100%;
+}
+
+.price{
+    color: grey;
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+.card button:hover{
+    opacity: 0.7;
+}
+
+
