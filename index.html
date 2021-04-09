@@ -4,143 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoFun</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/98d37f2ac3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>DoFunID</h1>
-        <div id="balance">
-            <h3>Balance</h3>
-        </div>
-        <div id="balancenumber">
-            <h3>15000</h3>
-        </div>
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">MENU
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <!-- <a href="#">Account</a> -->
-                    <!-- <a href="#">Settings</a> -->
-                    <a href="about.html">About Us</a>
-                  </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portofo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
             </div>
         </div>
-    </header>
-    <section>
-        <h2>PACKAGE</h2>
-        <div ></div>
+    </nav>
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Ichsan Rosaldi</div>
+                <div class="text-3">And I'm a<span class="typed-text"></span><span class="cursor typing">&nbsp;</span></div>
+                <a href="">Collaboration with me</a>
+            </div>
+        </div>
     </section>
-    <div class="semuacard">
-        <div class="card">
-            <div id="japan">
-                <img src="img/pexels-tomáš-malík-3408354.jpg" alt="japan">
-            <h2>Jakarta-Japan</h2>
-            <p class="price">2000</p>
-            <p>Nikmati sensasi berlibur dari Jakarta ke Jepang mulai dari $2000.</p>
-            <p>
-                <button class='buy'>
-                    Buy
-                </button>
-            </p>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/profileimg.png" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div id="hawai">
-            <img src="img/pexels-asad-photo-maldives-3601422.jpg" alt="Hawaii">
-            <h2>Jakarta-Hawaii</h2>
-            <p class="price">3000</p>
-            <p>Nikmati sensasi berlibur dari Jakarta ke Hawaii mulai dari $3000.</p>
-            <p>
-                <button class='buy'>
-                    Buy
-                </button>
-            </p>
-        </div>
-    </div>
-    <div class="card">
-        <div id="hawai">
-            <img src="img/pexels-aleksandar-pasaric-2044434.jpg" alt="Arab">
-            <h2>Jakarta-Arab</h2>
-            <p class="price">5000</p>
-            <p>Nikmati sensasi berlibur dari Jakarta ke Arab mulai dari $5000.</p>
-            <p>
-                <button class='buy'>
-                    Buy
-                </button>
-            </p>
-        </div>
-    </div>
-    <div class="card">
-        <div id="hawai">
-            <img src="img/pexels-davi-pimentel-2064827.jpg" alt="Rome">
-            <h2>Jakarta-Rome</h2>
-            <p class="price">4500</p>
-            <p>Nikmati sensasi berlibur dari Jakarta ke Rome mulai dari $4500.</p>
-            <p>
-                <button class='buy'>
-                    Buy
-                </button>
-            </p>
-        </div>
-    </div>
-</div>
+    </section>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eius voluptates id. Fuga laborum officia laboriosam quod natus fugit blanditiis consequuntur non porro, nemo eos temporibus eius quisquam, minima amet?</p>
+
+    <script src="script.js"></script>
 </body>
-<script>
-    let beli = document.getElementsByClassName('buy')  
-    beli[0].addEventListener('click',function(){
-        let harga = document.getElementsByClassName('price')
-        let uang = document.getElementById('balancenumber').innerText
-        let sisauang = Number(uang)-Number(harga[0].innerText)
-        let info = alert(`Anda berhasil membeli paket ini dan anda tidak bisa membeli produk ini lagi...`)
-
-        // document.getElementById('balancenumber')['style']['font-size']='30px'
-        // document.getElementById('balancenumber')['style']['font-family']='Roboto Condensed','sans-serif';
-        document.getElementById('balancenumber').innerHTML = `<h3>${sisauang}<h3>`
-        beli[0]['disabled'] = true
-        
-    })
-    beli[1].addEventListener('click',function(){
-        let harga = document.getElementsByClassName('price')
-        let uang = document.getElementById('balancenumber').innerText
-        let sisauang = Number(uang)-Number(harga[1].innerText)
-        let info = alert(`Anda berhasil membeli paket ini dan anda tidak bisa membeli produk ini lagi...`)
-
-        // document.getElementById('balancenumber')['style']['font-size']='30px'
-        // document.getElementById('balancenumber')['style']['font-family']='Roboto Condensed','sans-serif';
-        document.getElementById('balancenumber').innerHTML = `<h3>${sisauang}<h3>`
-            beli[1]['disabled']=true
-    })
-    beli[2].addEventListener('click',function(){
-        let harga = document.getElementsByClassName('price')
-        let uang = document.getElementById('balancenumber').innerText
-        let sisauang = Number(uang)-Number(harga[2].innerText)
-        let info = alert(`Anda berhasil membeli paket ini dan anda tidak bisa membeli produk ini lagi...`)
-
-        // document.getElementById('balancenumber')['style']['font-size']='30px'
-        // document.getElementById('balancenumber')['style']['font-family']='Roboto Condensed','sans-serif';
-        document.getElementById('balancenumber').innerHTML = `<h3>${sisauang}<h3>`
-        beli[2]['disabled']=true
-    })
-    beli[3].addEventListener('click',function(){
-        let harga = document.getElementsByClassName('price')
-        let uang = document.getElementById('balancenumber').innerText
-        let sisauang = Number(uang)-Number(harga[3].innerText)
-        let info = alert(`Anda berhasil membeli paket ini dan anda tidak bisa membeli produk ini lagi...`)
-
-        // document.getElementById('balancenumber')['style']['font-size']='30px'
-        // document.getElementById('balancenumber')['style']['font-family']='Roboto Condensed','sans-serif';
-        document.getElementById('balancenumber').innerHTML = `<h3>${sisauang}<h3>`
-        beli[3]['disabled']=true
-    })
-</script>
 </html>
